@@ -1,0 +1,24 @@
+/* Header Section  */
+.header__box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header p{
+    text-align: center;
+}
+
+span{
+    font-size: 30px;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+}
