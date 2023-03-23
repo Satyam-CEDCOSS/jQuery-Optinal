@@ -9,23 +9,27 @@ $(document).ready(function () {
       async function fetchUsers() {
         const response = await fetch(API_URL + place);
         const users = await response.json();
+        $(".section__box span").css("border", "4px solid grey");
+        $(".section__box span").css("padding", "30px 50px");
         return users;
       }
       fetchUsers().then((users) => {
         users;
         console.log(users);
-        // console.log(dates)
-        // console.log(dates.getDay())
-        $("#place").text(users.location.name)
-        $("#country").text(users.location.country)
-        $("#complete_date").text(users.current.last_updated)
-        $("#temprature").text(users.current.temp_c)
-        $("#weather").text(users.current.condition.text)
-        
-        // users.forEach(element => {
-        //   txt+="<tr><td>"+element.id+"</td><td>"+element.title+"</td><td>"+element.completed+"</td></tr>";
-        // });
-        // body.innerHTML = txt;
+        if (place.length!=0){
+          $("#place").text(users.location.name+" ")
+          $("#country").text(" "+users.location.country)
+          $("#complete_date").text(users.current.last_updated)
+          $("#temprature").text(users.current.temp_c+" °C")
+          $("#weather").text(users.current.condition.text)
+        }
+        else{
+          $("#place").text("")
+          $("#country").text("")
+          $("#complete_date").text("")
+          $("#temprature").text("")
+          $("#weather").text("")
+        }
       });
     }
   });

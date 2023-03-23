@@ -6,22 +6,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Strength Checker</title>
+    <title>Weather App</title>
 </head>
 <body>
     <div class="container">
         <!-- Haeder of the task  -->
         <header>
             <div class="header__box">
-                <span>Search:</span>
-                <input type="search" id="search_bar">
+                <input type="search" id="search_bar" placeholder="Search">
             </div>
         </header>
         <main>
             <div class="main__box">
-                <span id="place"></span>
-                <span id="country"></span>
-                <p id="complete_date"></p>
+                <div class="place">
+                    <span id="place"></span>
+                    <span id="country"></span>
+                </div>
+                <div class="date">
+                    <p id="complete_date"></p>
+                </div>
             </div>
         </main>
         <section>
@@ -30,7 +33,7 @@
             </div>
         </section>
         <footer>
-            <div class="footer">
+            <div class="footer__box">
                 <p id="weather"></p>
             </div>
         </footer>
