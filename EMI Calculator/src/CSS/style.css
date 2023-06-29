@@ -1,0 +1,26 @@
+/* main container  */
+.container h1{
+    text-align: center;
+}
+
+/* header  */
+
+/* header add */
+.header__add{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.header__add>label{
+    padding: 0px 50px;
+}
+
+
+#body--box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}

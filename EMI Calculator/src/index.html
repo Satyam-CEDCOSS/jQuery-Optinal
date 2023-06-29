@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Filter and Selecter</title>
+  </head>
+  <body>
+    <!-- main container  -->
+    <div class="container">
+      <h1>EMI Calculator</h1>
+      <!-- header  -->
+      <header>
+        <div class="header__box">
+          <div class="header__add">
+            <label for=""
+              >Principle:
+              <input type="number" id="principle" />
+            </label>
+            <label for=""
+              >Rate:
+              <input type="number" id="rate" step="0.1" />
+            </label>
+            <label for=""
+              >Time Period(in year):
+              <input type="number" id="time" step="0.01" />
+            </label>
+            <button onclick="calculate()">Submit</button>
+          </div>
+        </div>
+      </header>
+      <body>
+        <div id="body--box">
+          
+        </div>
+      </body>
+    </div>
+  </body>
+  <script src="./JS/products.js"></script>
+</html>
