@@ -1,0 +1,60 @@
+/* main container  */
+.container h1{
+    text-align: center;
+}
+
+/* header  */
+
+/* header add */
+.header__add{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.header__add>label{
+    padding: 0px 50px;
+}
+
+/* header select  */
+.header__select{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header__select>label{
+
+    margin: 0px 35px;
+}
+
+/* header table  */
+.header__table{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+table{
+    width: 90%;
+}
+
+
+/* footer  */
+.footer__search{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer__table{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
