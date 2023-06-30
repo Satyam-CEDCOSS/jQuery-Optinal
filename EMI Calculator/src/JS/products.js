@@ -14,3 +14,9 @@ function calculate() {
     $("#body--box").html("<p><b>Please Fill All the Field</b></p>");
   }
 }
+
+function reset() {
+  $("#principle").val("")
+  $("#rate").val("")
+  $("#time").val("")
+}
